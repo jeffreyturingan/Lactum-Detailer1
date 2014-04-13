@@ -336,21 +336,21 @@
 	
 
 	
-	$('div.sp1done').live('click',function() {
+	$('.sp1done a.ina0').live('click',function() {
 		$('#sp2').fadeIn(800,function() {
 			$('#sp2').addClass('spin');
 			$('#a1').removeClass('sp1done').addClass('sp2done');
 		});
 	});
 	
-	$('div.sp2done').live('click',function() {
+	$('.sp2done a.ina0').live('click',function() {
 		$('#sp3').fadeIn(800,function() {
 			$('#sp3').addClass('spin');
 			$('#a1').removeClass('sp2done').addClass('sp3done');
 		});
 	});
 	
-	$('div.sp3done').live('click',function() {
+	$('.sp3done a.ina0').live('click',function() {
 		$('#sp4').fadeIn(800,function() {
 			$('#a1').removeClass('sp3done').addClass('sp4done');
 			setTimeout(function() {$('.spark1').fadeIn(800).delay(100).fadeOut(800);},800);
@@ -393,7 +393,7 @@
 	function reseta1() {
 		$('#a1').removeClass('active').removeClass('sp1done').removeClass('sp2done').removeClass('sp3done').removeClass('sp4done');
 		$('#a1 > div').removeClass('spin').removeAttr('style');
-		$('#a1 > div > span').removeAttr('style');
+		$('#a1 > div > span,.ina0').removeAttr('style');
 	}
 	function reseta2() {
 		$('#a2 > img,#a2 > a').removeAttr('style');
@@ -402,7 +402,7 @@
 	function reseta12() {
 		$('#a1').removeClass('done').removeClass('active').removeClass('sp1done').removeClass('sp2done').removeClass('sp3done').removeClass('sp4done');
 		$('#a1 > div').removeClass('spin').removeAttr('style');
-		$('#a1 > div > span').removeAttr('style');
+		$('#a1 > div > span,.ina0').removeAttr('style');
 		$('#a2 > img,#a2 > a').removeAttr('style');
 		$('#a2').removeClass('active');
 		$('#s0').removeClass('done');
