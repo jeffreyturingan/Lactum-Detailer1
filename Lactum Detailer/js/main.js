@@ -7,14 +7,10 @@
 	var actionfinger = 2,
 		lengthofdrag = 300;
 	
-	$("#s0").swipe({
-		swipeLeft:function(event, direction, distance, duration, fingerCount) {
-			$(this).addClass('done');
-			$('#s1').addClass('active');
-			tos1();
-		},
-		fingers:actionfinger,
-		threshold: lengthofdrag
+	$("#s0 > .lactumstart").live('click',function() {
+		$('#s0').addClass('done');
+		$('#s1').addClass('active');
+		tos1();
 	});
 	
 	$("#s1").swipe({

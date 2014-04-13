@@ -22,6 +22,9 @@ a,img { border: 0;outline-width:0;}
 /*PAGE*/
 #s0 { background: url('images/startup.png')}
 
+
+.lactumstart {background: transparent;display: block;height: 230px;left: 510px;position: absolute;top: 258px;width: 450px;}
+
 /*SLIDE1*/
 #s1 span { display: block; background: url('images/s1.png');width: 0px;height: 768px;-moz-transition:width 0.8s;-webkit-transition:width 0.8s;transition:width 0.8s}
 #s1 span.anim{ width: 1024px}
