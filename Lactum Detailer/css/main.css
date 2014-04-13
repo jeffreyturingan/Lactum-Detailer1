@@ -17,6 +17,8 @@ a,img { border: 0;outline-width:0;}
 .slide.active { left: 0;top: 0}
 .slide.done { left: -100%;top: 0}
 
+
+
 /*PAGE*/
 #s0 { background: url('images/startup.png')}
 
