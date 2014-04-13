@@ -20,14 +20,15 @@
 	});
 	
 	
-	$('#a1 > div').each(function() {
-		$(this).live('click',function() {
-			var sp = $(this).attr('id');
-			console.log(sp);
-			$('#' + sp ).toggleClass('spin');
-		});
+	$('.ina1').live('click',function() {
+		$('#sp1').toggleClass('spin');
 	});
-	
+	$('.ina2').live('click',function() {
+		$('#sp3').toggleClass('spin');
+	});
+	$('.ina3').live('click',function() {
+		$('#sp3').toggleClass('spin');
+	});
 	
 	$("#s1").swipe({
 		swipeRight:function(event, direction, distance, duration, fingerCount) {
@@ -327,7 +328,7 @@
 	
 	function toa1() {
 		$('#sp1').fadeIn(800,function() {
-			$(this).addClass('spin');
+			$('#sp1').addClass('spin');
 			$('#a1').addClass('sp1done');
 		});
 	}
