@@ -19,6 +19,16 @@
 		toa1();
 	});
 	
+	
+	$('#a1 > div').each(function() {
+		$(this).live('click',function() {
+			var sp = $(this).attr('id');
+			console.log(sp);
+			$('#' + sp ).toggleClass('spin');
+		});
+	});
+	
+	
 	$("#s1").swipe({
 		swipeRight:function(event, direction, distance, duration, fingerCount) {
 			$(this).removeClass('active');
@@ -311,15 +321,7 @@
 	}
 	
 	
-	$('#a1 > div').each(function() {
-		$(this).live('click',function() {
-			var sp = $(this).attr('id');
-			if(sp == 'sp4') {
-				return false;
-			}
-			$('#' + sp ).toggleClass('spin');
-		});
-	});
+	
 	
 	
 	
