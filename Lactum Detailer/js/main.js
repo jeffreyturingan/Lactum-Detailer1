@@ -330,6 +330,9 @@
 		});
 	}
 	
+	
+
+	
 	$('div.sp1done').live('click',function() {
 		$('#sp2').fadeIn(800,function() {
 			$('#sp2').addClass('spin');
