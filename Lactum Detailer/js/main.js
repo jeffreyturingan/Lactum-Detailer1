@@ -4,14 +4,17 @@
 	  e.preventDefault();
 	}, false);
 	
-	var actionfinger = 2;
+	var actionfinger = 2,
+		lengthofdrag = 300;
 	
 	$("#s0").swipe({
 		swipeLeft:function(event, direction, distance, duration, fingerCount) {
 			$(this).addClass('done');
 			$('#s1').addClass('active');
 			tos1();
-		},fingers:actionfinger 
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag
 	});
 	
 	$("#s1").swipe({
@@ -24,7 +27,9 @@
 			$('#s2').addClass('active');
 			resets1();
 			tos2();
-		},fingers:actionfinger 
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag 
 	});
 	
 	
@@ -40,7 +45,9 @@
 			$('#s3').addClass('active');
 			resets2();
 			tos3();
-		},fingers:actionfinger 
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag
 	});
 	
 	$("#s3").swipe({
@@ -56,7 +63,9 @@
 			resets3();
 			tos4();
 			
-		},fingers:actionfinger 
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag 
 	});
 	
 	$("#s4").swipe({
@@ -73,7 +82,9 @@
 			resets4();
 			tos5();
 			
-		},fingers:actionfinger 
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag 
 	});
 	
 	$("#s5").swipe({
@@ -90,7 +101,9 @@
 			resets5();
 			tos6();
 			
-		},fingers:actionfinger 
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag 
 	});
 	
 	$("#s6").swipe({
@@ -106,7 +119,9 @@
 			$('#s7').addClass('active');
 			resets6();
 			tos7();
-		},fingers:actionfinger 
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag 
 	});
 	
 	$("#s7").swipe({
@@ -124,7 +139,9 @@
 			tos8();
 			
 			
-		},fingers:actionfinger 
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag 
 	});
 	
 	$("#s8").swipe({
@@ -140,7 +157,9 @@
 			resets8();
 			tos9();
 			
-		},fingers:actionfinger 
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag 
 	});
 	
 	$("#s9").swipe({
@@ -158,7 +177,9 @@
 			resets9();
 			tos10();
 			
-		},fingers:actionfinger 
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag 
 	});
 	
 	$("#s10").swipe({
@@ -168,7 +189,9 @@
 			resets10();
 			tos9();
 			
-		},fingers:actionfinger 
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag 
 	});
 	
 	$('.restart').live('click',function() {
