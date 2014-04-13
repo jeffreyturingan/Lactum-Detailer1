@@ -24,7 +24,7 @@
 		$('#sp1').toggleClass('spin');
 	});
 	$('.ina2').live('click',function() {
-		$('#sp3').toggleClass('spin');
+		$('#sp2').toggleClass('spin');
 	});
 	$('.ina3').live('click',function() {
 		$('#sp3').toggleClass('spin');
