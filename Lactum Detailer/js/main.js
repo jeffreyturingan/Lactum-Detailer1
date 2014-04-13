@@ -13,6 +13,12 @@
 		tos1();
 	});
 	
+	$("#s0 > .alactastart").live('click',function() {
+		$('#s0').addClass('done');
+		$('#a1').addClass('active');
+		toa1();
+	});
+	
 	$("#s1").swipe({
 		swipeRight:function(event, direction, distance, duration, fingerCount) {
 			$(this).removeClass('active');
@@ -290,16 +296,12 @@
 			$('#s7 > .s7a').addClass('anim6');
 		},3500);
 
-		/*setTimeout(function() {$('#s7 > .s7b').addClass('anim');},1500);
-		setTimeout(function() {$('#s7 > .s7c').addClass('anim');},2000);
-		setTimeout(function() {$('#s7 > .s7d').addClass('anim');},2500);*/
 	}
 	function tos8() {
-		/*setTimeout(function() {$('#s8 > .s8a').addClass('anim');},1000);*/
 		setTimeout(function() {$('#s8 > .s8b').addClass('anim');},1500);
 		setTimeout(function() {$('#s8 > .s8c').addClass('anim');},2000);
-		setTimeout(function() {$('#s8 > .s8d').addClass('anim');},2500);
-		setTimeout(function() {$('#s8 > .s8e').addClass('anim');},3000);
+		setTimeout(function() {$('#s8 > .s8d').addClass('anim');},3000);
+		setTimeout(function() {$('#s8 > .s8e').addClass('anim');},3500);
 	}
 	function tos9() {
 		setTimeout(function() {$('#s9 > .s9b, #s9 > i').addClass('anim');},1000);
@@ -307,5 +309,103 @@
 	function tos10() {
 		setTimeout(function() {$('#s10 > .s10a, #s10 > i ').addClass('anim');},1000);
 	}
+	
+	
+	$('#a1 > div').each(function() {
+		$(this).live('click',function() {
+			var sp = $(this).attr('id');
+			if(sp == 'sp4') {
+				return false;
+			}
+			$('#' + sp ).toggleClass('spin');
+		});
+	});
+	
+	
+	
+	function toa1() {
+		$('#sp1').fadeIn(800,function() {
+			$(this).click();
+			$('#a1').addClass('sp1done');
+		});
+	}
+	
+	$('div.sp1done').live('click',function() {
+		$('#sp2').fadeIn(800,function() {
+			$('#sp2').addClass('spin');
+			$('#a1').removeClass('sp1done').addClass('sp2done');
+		});
+	});
+	
+	$('div.sp2done').live('click',function() {
+		$('#sp3').fadeIn(800,function() {
+			$('#sp3').addClass('spin');
+			$('#a1').removeClass('sp2done').addClass('sp3done');
+		});
+	});
+	
+	$('div.sp3done').live('click',function() {
+		$('#sp4').fadeIn(800,function() {
+			$('#a1').removeClass('sp3done').addClass('sp4done');
+			setTimeout(function() {$('.spark1').fadeIn(800).delay(100).fadeOut(800);},800);
+			setTimeout(function() {$('.spark2').fadeIn(800).delay(100).fadeOut(800);},1600);
+			setTimeout(function() {$('.spark3,.spark4').fadeIn(800).delay(100).fadeOut(800);},2400);
+		});
+	});
+	
+	
+	$("#a1").swipe({
+		swipeRight:function(event, direction, distance, duration, fingerCount) {
+			$(this).removeClass('active');
+			$('#s0').removeClass('done');
+			reseta1();
+		}, swipeLeft:function(event, direction, distance, duration, fingerCount) {
+			$(this).addClass('done');
+			$('#a2').addClass('active');
+			reseta1();
+			toa2();
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag 
+	});
+	$("#a2").swipe({
+		swipeRight:function(event, direction, distance, duration, fingerCount) {
+			$(this).removeClass('active');
+			$('#a1').removeClass('done').addClass('active');
+			reseta2();
+			toa1()
+		},
+		fingers:actionfinger,
+		threshold: lengthofdrag 
+	});
+	
+	$('.alachome').live('click',function() {
+		reseta12();
+	});
+	
+	
+	function reseta1() {
+		$('#a1').removeClass('active').removeClass('sp1done').removeClass('sp2done').removeClass('sp3done').removeClass('sp4done');
+		$('#a1 > div').removeClass('spin').removeAttr('style');
+		$('#a1 > div > span').removeAttr('style');
+	}
+	function reseta2() {
+		$('#a2 > img,#a2 > a').removeAttr('style');
+	}
+	
+	function reseta12() {
+		$('#a1').removeClass('done').removeClass('active').removeClass('sp1done').removeClass('sp2done').removeClass('sp3done').removeClass('sp4done');
+		$('#a1 > div').removeClass('spin').removeAttr('style');
+		$('#a1 > div > span').removeAttr('style');
+		$('#a2 > img,#a2 > a').removeAttr('style');
+		$('#a2').removeClass('active');
+		$('#s0').removeClass('done');
+	}
+	
+	function toa2() {
+		setTimeout(function() {$('#a2 > img').fadeIn(800);},300);
+		setTimeout(function() {$('#a2 > a').fadeIn(800);},1100);
+	}
+	
 	
 });

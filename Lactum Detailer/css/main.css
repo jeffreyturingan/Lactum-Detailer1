@@ -22,8 +22,10 @@ a,img { border: 0;outline-width:0;}
 /*PAGE*/
 #s0 { background: url('images/startup.png')}
 
-
+.alactastart {background: transparent;display: block;height: 230px;left: 35px;position: absolute;top: 258px;width: 450px;}
 .lactumstart {background: transparent;display: block;height: 230px;left: 510px;position: absolute;top: 258px;width: 450px;}
+
+
 
 /*SLIDE1*/
 #s1 span { display: block; background: url('images/s1.png');width: 0px;height: 768px;-moz-transition:width 0.8s;-webkit-transition:width 0.8s;transition:width 0.8s}
@@ -36,10 +38,10 @@ a,img { border: 0;outline-width:0;}
 /*SLIDE2*/
 #s2 img { position: absolute;left: 0;top: 0;z-index: 1}
 
-#s2 .s2b { display: block; width: 376px; height: 0;position: absolute;left:86px; top: 181px;background: url('images/s2b.png');-moz-transition:height 0.3s;-webkit-transition:height 0.3s;transition:height 0.3s  }
+#s2 .s2b { display: block; width: 376px; height: 0;position: absolute;left:86px; top: 181px;background: url('images/s2b.png');-moz-transition:height 0.5s;-webkit-transition:height 0.5s;transition:height 0.5s  }
 #s2 .s2b.anim{ height: 407px}
 
-#s2 .s2c { display: block; width: 231px; height: 137px;position: absolute;opacity: 0;left:608px; top: 196px;background: url('images/s2c.png');-moz-transition:opacity 0.3s;-webkit-transition:opacity 0.3s;transition:opacity 0.3s  }
+#s2 .s2c { display: block; width: 231px; height: 137px;position: absolute;opacity: 0;left:608px; top: 196px;background: url('images/s2c.png');-moz-transition:opacity 0.5s;-webkit-transition:opacity 0.5s;transition:opacity 0.5s  }
 #s2 .s2c.anim { opacity: 1}
 
 /*SLIDE3*/
@@ -105,7 +107,7 @@ a,img { border: 0;outline-width:0;}
 #s6 .s6c { display: block; position: absolute; height:377px; width:531px; left:427px;top:148px;background: url('images/s6c.png') left top ;opacity: 0;-moz-transition:opacity 0.5s;-webkit-transition:opacity 0.5s;transition:opacity 0.5s }
 #s6 .s6c.anim { opacity: 1}
 
-#s6 .s6d { display: block; width: 24px; height: 0;position: absolute;left:850px; top: 213px;background: url('images/s6d.png');-moz-transition:height 0.5s;-webkit-transition:height 0.5s;transition:height 0.5s  }
+#s6 .s6d { display: block; width: 24px; height: 0;position: absolute;left:892px; top: 213px;background: url('images/s6d.png');-moz-transition:height 0.5s;-webkit-transition:height 0.5s;transition:height 0.5s  }
 #s6 .s6d.anim{ height: 301px}
 
 #s6 .s6e { display: block; position: absolute; height:47px; width:474px; left:458px;top:544px;background: url('images/s6e.png') left top ;opacity: 0;-moz-transition:opacity 0.5s;-webkit-transition:opacity 0.5s;transition:opacity 0.5s }
@@ -139,7 +141,7 @@ a,img { border: 0;outline-width:0;}
 #s8 .s8b {display: block; position: absolute; height:81px; width:0; left:154px;top: 40px;background: url('images/s8b.png');-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
 #s8 .s8b.anim { width:717px}
 
-#s8 .s8c {display: block; position: absolute; height:264px; width:0; left:160px;top:195px;background: url('images/s8c.png') right top no-repeat;-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
+#s8 .s8c {display: block; position: absolute; height:264px; width:0; left:160px;top:195px;background: url('images/s8c.png') right top no-repeat;-moz-transition:width 1s;-webkit-transition:width 1s;transition:width 1s }
 #s8 .s8c.anim { width:791px}
 
 #s8 .s8d { display: block; position: absolute; height:31px; width:464px; left:467px;top:471px;background: url('images/s8d.png') left top ;opacity: 0;-moz-transition:opacity 0.5s;-webkit-transition:opacity 0.5s;transition:opacity 0.5s }
@@ -169,19 +171,43 @@ a,img { border: 0;outline-width:0;}
 
 
 
+/*ALACTA*/
+#a1,#a2 { background-color:#f2d731 }
+#a2 > img { display: none}
+
+#sp1 {position: absolute;margin: 10px auto;width: 231px;height: 275px;overflow: hidden;left: 48px;top:109px ;z-index: 1; cursor: pointer;display: none }
+#sp1 {perspective: 1000;}
+#sp1card {width: 100%;height: 100%;transform-style: preserve-3d;-moz-transition: all 0.5s linear; -webkit-transition: all  0.5s linear;;transition: all  0.5s linear;}
+#sp1.spin #sp1card  {-moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+#sp1card div { background: url('images/a1a.png')}
+
+#sp2 {position: absolute;margin: 10px auto;width: 221px;height: 276px;overflow: hidden;left: 744px;top:109px ;z-index: 1; cursor: pointer;display: none }
+#sp2 {perspective: 1000;}
+#sp2card {width: 100%;height: 100%;transform-style: preserve-3d;-moz-transition: all 0.5s linear; -webkit-transition: all  0.5s linear;;transition: all  0.5s linear;}
+#sp2.spin #sp2card  {-moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+#sp2card div { background: url('images/a1c.png')}
+
+#sp3 {position: absolute;margin: 10px auto;width: 228px;height: 275px;overflow: hidden;left:398px;top:448px ;z-index: 1; cursor: pointer;display: none }
+#sp3 {perspective: 1000;}
+#sp3card {width: 100%;height: 100%;transform-style: preserve-3d;-moz-transition: all 0.5s linear; -webkit-transition: all  0.5s linear;;transition: all  0.5s linear;}
+#sp3.spin #sp3card  {-moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+#sp3card div { background: url('images/a1e.png')}
+
+
+.face {position: absolute;width: 100%;height: 100%;backface-visibility: hidden;}
+.face.back {display: block;-moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg);transform: rotateY(180deg);box-sizing: border-box;text-align: center;}
 
 
 
+#sp4 {position: absolute;margin: 10px auto;width: 473px;height:394px;overflow: hidden;left:276px;top:10px ;z-index: 1; cursor: pointer;display: none}
+#sp4 > img  { position: absolute;z-index: 2;left: 0;top: 0}
 
+.spark1 { display: block;position: absolute;width: 182px;height: 184px; left:28px ;top: 26px;background: url('images/spark.png');display: none }
+.spark2 { display: block;position: absolute;width: 182px;height: 184px; left:258px ;top: 6px;background: url('images/spark.png');display: none }
+.spark3 { display: block;position: absolute;width: 182px;height: 184px; left:7px ;top:246px;background: url('images/spark.png');display: none }
+.spark4 { display: block;position: absolute;width: 182px;height: 184px; left:288px ;top:263px;background: url('images/spark.png');display: none }
 
-
-
-
-
-
-
-
-
+.alachome { display: none;width: 52px; height: 52px; background: url('images/alactahome.png') no-repeat; position: absolute;z-index: 100;right:20px;bottom: 20px}
 
 
 
