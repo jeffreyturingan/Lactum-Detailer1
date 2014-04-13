@@ -355,7 +355,7 @@
 			$('#a1').removeClass('sp3done').addClass('sp4done');
 			setTimeout(function() {$('.spark1').fadeIn(800).delay(100).fadeOut(800);},800);
 			setTimeout(function() {$('.spark2').fadeIn(800).delay(100).fadeOut(800);},1600);
-			setTimeout(function() {$('.spark3,.spark4').fadeIn(800).delay(100).fadeOut(800);},2400);
+			setTimeout(function() {$('.spark3,.spark4').fadeIn(800).delay(100).fadeOut(800); $('.ina0').fadeOut();},2400);
 		});
 	});
 	
