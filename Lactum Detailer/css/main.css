@@ -177,19 +177,19 @@ a,img { border: 0;outline-width:0;}
 
 #sp1 {position: absolute;margin: 10px auto;width: 231px;height: 275px;overflow: hidden;left: 48px;top:109px ;z-index: 1; cursor: pointer;display: none }
 #sp1 {perspective: 1000;}
-#sp1card {width: 100%;height: 100%;transform-style: preserve-3d;-moz-transition: all 0.5s linear; -webkit-transition: all  0.5s linear;;transition: all  0.5s linear;}
+#sp1card {width: 100%;height: 100%;transform-style: preserve-3d;-moz-transition: all 0.5s linear; -webkit-transition: all  0.5s linear;transition: all  0.5s linear;}
 #sp1.spin #sp1card  {-moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
 #sp1card div { background: url('images/a1a.png')}
 
 #sp2 {position: absolute;margin: 10px auto;width: 221px;height: 276px;overflow: hidden;left: 744px;top:109px ;z-index: 1; cursor: pointer;display: none }
 #sp2 {perspective: 1000;}
-#sp2card {width: 100%;height: 100%;transform-style: preserve-3d;-moz-transition: all 0.5s linear; -webkit-transition: all  0.5s linear;;transition: all  0.5s linear;}
+#sp2card {width: 100%;height: 100%;transform-style: preserve-3d;-moz-transition: all 0.5s linear; -webkit-transition: all  0.5s linear;transition: all  0.5s linear;}
 #sp2.spin #sp2card  {-moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
 #sp2card div { background: url('images/a1c.png')}
 
 #sp3 {position: absolute;margin: 10px auto;width: 228px;height: 275px;overflow: hidden;left:398px;top:448px ;z-index: 1; cursor: pointer;display: none }
 #sp3 {perspective: 1000;}
-#sp3card {width: 100%;height: 100%;transform-style: preserve-3d;-moz-transition: all 0.5s linear; -webkit-transition: all  0.5s linear;;transition: all  0.5s linear;}
+#sp3card {width: 100%;height: 100%;transform-style: preserve-3d;-moz-transition: all 0.5s linear; -webkit-transition: all  0.5s linear;transition: all  0.5s linear;}
 #sp3.spin #sp3card  {-moz-transform: rotateY(180deg);-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
 #sp3card div { background: url('images/a1e.png')}
 

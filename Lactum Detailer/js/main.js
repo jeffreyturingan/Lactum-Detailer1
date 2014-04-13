@@ -325,7 +325,7 @@
 	
 	function toa1() {
 		$('#sp1').fadeIn(800,function() {
-			$(this).click();
+			$(this).addClass('spin');
 			$('#a1').addClass('sp1done');
 		});
 	}
