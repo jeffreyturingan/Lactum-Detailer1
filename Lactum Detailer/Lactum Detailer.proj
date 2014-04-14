@@ -14,7 +14,7 @@
     <AndroidHardwareAcceleration>false</AndroidHardwareAcceleration>
     <WP8SupportedResolutions>ID_RESOLUTION_WVGA;ID_RESOLUTION_WXGA;ID_RESOLUTION_HD720P</WP8SupportedResolutions>
     <BundleVersion>1.0</BundleVersion>
-    <DisplayName>2014 Detailer</DisplayName>
+    <DisplayName>AlactaLactum</DisplayName>
     <Author>Jeffrey Turingan</Author>
     <Description>Lactum Detailer</Description>
     <iOSDeviceFamily>2</iOSDeviceFamily>

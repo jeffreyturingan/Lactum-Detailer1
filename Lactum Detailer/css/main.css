@@ -1,4 +1,4 @@
-/*-----------------------------------------------------------------------------------------------
+﻿/*-----------------------------------------------------------------------------------------------
 Project Name: | Lactum Creative
 Description:  | Ipad App
 Company:      | autologicmedia
@@ -20,10 +20,10 @@ a,img { border: 0;outline-width:0;}
 
 
 /*PAGE*/
-#s0 { background: url('images/startup.png')}
+#s0 { background: url('images/startup.jpg')}
 
-.alactastart {background: transparent;display: block;height: 230px;left: 35px;position: absolute;top: 258px;width: 450px;}
-.lactumstart {background: transparent;display: block;height: 230px;left: 510px;position: absolute;top: 258px;width: 450px;}
+.alactastart {background: transparent;display: block;height: 230px;left: 35px;position: absolute;top: 230px;width: 450px;}
+.lactumstart {background: transparent;display: block;height: 230px;left: 510px;position: absolute;top: 230px;width: 450px;}
 
 
 
@@ -38,25 +38,25 @@ a,img { border: 0;outline-width:0;}
 /*SLIDE2*/
 #s2 img { position: absolute;left: 0;top: 0;z-index: 1}
 
-#s2 .s2b { display: block; width: 376px; height: 0;position: absolute;left:86px; top: 181px;background: url('images/s2b.png');-moz-transition:height 0.5s;-webkit-transition:height 0.5s;transition:height 0.5s  }
-#s2 .s2b.anim{ height: 407px}
+#s2 .s2b { display: block; width:491px; height: 0;position: absolute;left:19px; top: 150px;background: url('images/s2b.png');-moz-transition:height 0.5s;-webkit-transition:height 0.5s;transition:height 0.5s  }
+#s2 .s2b.anim{ height: 543px}
 
-#s2 .s2c { display: block; width: 231px; height: 137px;position: absolute;opacity: 0;left:608px; top: 196px;background: url('images/s2c.png');-moz-transition:opacity 0.5s;-webkit-transition:opacity 0.5s;transition:opacity 0.5s  }
+#s2 .s2c { display: block; width: 336px; height: 212px;position: absolute;opacity: 0;left:617px; top: 197px;background: url('images/s2c.png');-moz-transition:opacity 0.5s;-webkit-transition:opacity 0.5s;transition:opacity 0.5s  }
 #s2 .s2c.anim { opacity: 1}
 
 /*SLIDE3*/
 #s3 .s3a { display: block; position: absolute; height:85px; width:0; left:18px;top: 41px;background: url('images/s3a.png') left top ;-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
 #s3 .s3a.anim { width:968px}
 
-#s3 .s3b { display: block; position: absolute; height:431px; width:0; left:0;top: 148px;background: url('images/s3b.png') left top ;-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
+#s3 .s3b { display: block; position: absolute; height:768px; width:0; left:0;top: 0px;background: url('images/s3b.png') left top ;-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
 #s3 .s3b.anim { width:1024px}
 #s3 i { display: block; width: 141px;height: 768px; position: absolute;left: -141px;background: url('images/glow1.png') ; top:0px;-moz-transition:0.5s;-webkit-transition:0.5s;transition:0.5s}
 #s3 i.anim { left: 100%;}
 
-#s3 .s3c { display: block; width: 659px; height: 20px;position: absolute;opacity: 0;left:186px; top: 508px;background: url('images/s3c.png');-moz-transition:opacity 0.3s;-webkit-transition:opacity 0.3s;transition:opacity 0.3s  }
+#s3 .s3c { display: block; width: 878px; height: 148px;position: absolute;opacity: 0;left:55px; top: 507px;background: url('images/s3c.png');-moz-transition:opacity 0.3s;-webkit-transition:opacity 0.3s;transition:opacity 0.3s  }
 #s3 .s3c.anim { opacity: 1}
 
-#s3 .s3d { display: block; position: absolute; height:65px; width:706px; left:141px;top: 598px;background: url('images/s3d.png') left top ;opacity: 0;-moz-transition:opacity 0.3s;-webkit-transition:opacity 0.3s;transition:opacity 0.3s }
+#s3 .s3d { display: block; position: absolute; height:65px; width:709px; left:78px;top: 673px;background: url('images/s3d.png') left top ;opacity: 0;-moz-transition:opacity 0.3s;-webkit-transition:opacity 0.3s;transition:opacity 0.3s }
 #s3 .s3d.anim { opacity: 1}
 
 
@@ -69,13 +69,13 @@ a,img { border: 0;outline-width:0;}
 #s4 .s4a2 {display: block; position: absolute; height:768px; width:0; left:0;top: 0;background: url('images/s4.png') left top ;-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
 #s4 .s4a2.anim { width:1024px}
 
-#s4 .s4b {display: block; width: 731px; height: 0;position: absolute;left:153px; top:370px;-moz-transition:height 0.2s;-webkit-transition:height 0.2s;transition:height 0.2s }
-#s4 .s4b.anim{ height:134px}
+#s4 .s4b {display: block; width: 886px; height: 0;position: absolute;left:62px; top:409px;-moz-transition:height 0.2s;-webkit-transition:height 0.2s;transition:height 0.2s }
+#s4 .s4b.anim{ height:162px}
 
-#s4 .s4c {display: block; width: 731px; height: 0;position: absolute;left:153px; top:504px;background: url('images/s4c.png');-moz-transition:height 0.2s;-webkit-transition:height 0.2s;transition:height 0.2s }
-#s4 .s4c.anim{ height:50px}
+#s4 .s4c {display: block; width: 886px; height: 0;position: absolute;left:62px; top:571px;background: url('images/s4c.png');-moz-transition:height 0.2s;-webkit-transition:height 0.2s;transition:height 0.2s }
+#s4 .s4c.anim{ height:63px}
 
-#s4 .s4d { display: block; position: absolute; height:100px; width:708px; left:140px;top: 598px;background: url('images/s4d.png') left top ;opacity: 0;-moz-transition:opacity 0.3s;-webkit-transition:opacity 0.3s;transition:opacity 0.3s }
+#s4 .s4d { display: block; position: absolute; height:100px; width:708px; left:95px;top: 652px;background: url('images/s4d.png') left top ;opacity: 0;-moz-transition:opacity 0.3s;-webkit-transition:opacity 0.3s;transition:opacity 0.3s }
 #s4 .s4d.anim { opacity: 1}
 
 /*SLIDE5*/
@@ -117,7 +117,7 @@ a,img { border: 0;outline-width:0;}
 /*SLIDE7*/
 #s7 { background: url('images/s7.png') left top no-repeat}
 
-#s7 .s7a {display: block; position: absolute;  width:180px;height:145px; left:97px;top:270px;background: url('images/s7a.png') left top no-repeat;z-index: 5;-moz-transition:left 0.5s,top 0.5s;-webkit-transition:left 0.5s,top 0.5s;transition:left 0.5s,top 0.5s}
+#s7 .s7a {display: block; position: absolute;  width:211px;height:171px; left:97px;top:270px;background: url('images/s7a.png') left top no-repeat;z-index: 5;-moz-transition:left 0.5s,top 0.5s;-webkit-transition:left 0.5s,top 0.5s;transition:left 0.5s,top 0.5s}
 #s7 .s7a.anim { left:139px;top:249px }
 #s7 .s7a.anim.anim2 { left:97px;top:416px }
 #s7 .s7a.anim.anim2.anim3 { left:139px;top:380px }
@@ -126,17 +126,17 @@ a,img { border: 0;outline-width:0;}
 #s7 .s7a.anim.anim2.anim3.anim4.anim5.anim6 { left:443px;top:559px }
 
 
-#s7 .s7b {display: block; position: absolute; height:532px; width:0; left:97px;top:101px;background: url('images/s7b.png');-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
-#s7 .s7b.anim { width:838px}
+#s7 .s7b {display: block; position: absolute; height:532px; width:0; left:95px;top:110px;background: url('images/s7b.png');-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
+#s7 .s7b.anim { width:835px}
 
-#s7 .s7c {display: block; position: absolute; height:73px; width:0; left:97px;top:380px;background: url('images/s7c.png');-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
-#s7 .s7c.anim { width:383px}
+#s7 .s7c {display: block; position: absolute; height:78px; width:0; left:95px;top:369px;background: url('images/s7c.png');-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
+#s7 .s7c.anim { width:376px}
 
-#s7 .s7d {display: block; position: absolute; height:49px; width:0; left:97px;top:490px;background: url('images/s7d.png');-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
-#s7 .s7d.anim { width:340px}
+#s7 .s7d {display: block; position: absolute; height:59px; width:0; left:95px;top:479px;background: url('images/s7d.png');-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
+#s7 .s7d.anim { width:360px}
 
 /*SLIDE8*/
-#s8 .s8a {display: block; position: absolute; height:311px; width:241px; left:25px;top: 173px;background: url('images/s8a.png') left top no-repeat;z-index: 5}
+#s8 .s8a {display: block; position: absolute; height:340px; width:265px; left:16px;top: 159px;background: url('images/s8a.png') left top no-repeat;z-index: 5}
 
 #s8 .s8b {display: block; position: absolute; height:81px; width:0; left:154px;top: 40px;background: url('images/s8b.png');-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
 #s8 .s8b.anim { width:717px}
@@ -151,7 +151,7 @@ a,img { border: 0;outline-width:0;}
 #s8 .s8e.anim { width:660px}
 
 /*SLIDE9*/
-#s9 .s9a {display: block; position: absolute; height:292px; width:761px; left:110px;top: 39px;background: url('images/s9a.png') left top no-repeat;}
+#s9 .s9a {display: block; position: absolute; height:288px; width:759px; left:110px;top: 39px;background: url('images/s9a.png') left top no-repeat;}
 
 #s9 .s9b {display: block; position: absolute; height:317px; width:0; left:0px;top:352px;background: url('images/s9b.png');-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
 #s9 .s9b.anim { width:1024px}
@@ -161,7 +161,7 @@ a,img { border: 0;outline-width:0;}
 
 
 /*SLIDE10*/
-#s10 .s10a {display: block; position: absolute; height:768px; width:0; left:0;top:0;background: url('images/s10a.png') left top ;-moz-transition:width 0.8s;-webkit-transition:width 0.8s;transition:width 0.8s }
+#s10 .s10a {display: block; position: absolute; height:768px; width:0; left:0;top:0;background: url('images/s10a.jpg') left top ;-moz-transition:width 0.8s;-webkit-transition:width 0.8s;transition:width 0.8s }
 #s10 .s10a.anim { width:1024px}
 
 #s10 i { display: block; width: 141px;height: 768px; position: absolute;left: -141px;background: url('images/glow1.png') ; top:0px;-moz-transition:0.7s;-webkit-transition:0.7s;transition:0.7s}
