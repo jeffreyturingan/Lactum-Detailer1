@@ -4,8 +4,8 @@
 	  e.preventDefault();
 	}, false);
 	
-	var actionfinger = 2,
-		lengthofdrag = 300;
+	var actionfinger = 1,
+		lengthofdrag = 200;
 	
 	$("#s0 > .lactumstart").live('click',function() {
 		$('#s0').addClass('done');
@@ -213,40 +213,83 @@
 	
 	/*RESET*/
 	function resets1() {
-		$('#s1 > span,#s1 > i').removeClass('anim');
+		$('#s1 span,#s1 > i').removeClass('anim');
 	}
 	function resets2() {
-		$('#s2 > .s2b,#s2 > .s2c').removeClass('anim');
+		$('#s1 span,#s1 > i').removeClass('anim');
+		$('#s2 span').removeClass('anim');
 	}
 	function resets3() {
-		$('.s3a,.s3b,.s3c,.s3d, #s3 > i').removeClass('anim');
+		$('#s1 span,#s1 > i').removeClass('anim');
+		$('#s2 span').removeClass('anim');
+		$('#s3 span, #s3 i').removeClass('anim');
 	}
 	function resets4() {
-		$('.s4a,.s4a2,.s4b,.s4c,.s4d').removeClass('anim');
+		$('#s1 span,#s1 > i').removeClass('anim');
+		$('#s2 span').removeClass('anim');
+		$('#s3 span, #s3 i').removeClass('anim');
+		$('#s4 span').removeClass('anim');
 	}
 	function resets5() {
-		$('.s5a,.s5b,.s5c,.s5d,.s5e,#s5 > i').removeClass('anim');
+		$('#s1 span,#s1 > i').removeClass('anim');
+		$('#s2 span').removeClass('anim');
+		$('#s3 span, #s3 i').removeClass('anim');
+		$('#s4 span').removeClass('anim');
+		$('#s5 span,#s5 i').removeClass('anim');
 	}
 	function resets6() {
-		$('.s6b,.s6c,.s6d,.s6e').removeClass('anim');
+		$('#s1 span,#s1 > i').removeClass('anim');
+		$('#s2 span').removeClass('anim');
+		$('#s3 span, #s3 i').removeClass('anim');
+		$('#s4 span').removeClass('anim');
+		$('#s5 span,#s5 i').removeClass('anim');
 	}
 	function resets7() {
+		$('#s1 span,#s1 > i').removeClass('anim');
+		$('#s2 span').removeClass('anim');
+		$('#s3 span, #s3 i').removeClass('anim');
+		$('#s4 span').removeClass('anim');
+		$('#s5 span,#s5 i').removeClass('anim');
 		$('.s7a').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
-		$('.s7b,.s7c,.s7d').removeClass('anim');
+		$('#s7 span').removeClass('anim');
 	}
 	function resets8() {
-		$('.s8e,.s8b,.s8c,.s8d').removeClass('anim');
+		$('#s1 span,#s1 > i').removeClass('anim');
+		$('#s2 span').removeClass('anim');
+		$('#s3 span, #s3 i').removeClass('anim');
+		$('#s4 span').removeClass('anim');
+		$('#s5 span,#s5 i').removeClass('anim');
+		$('.s7a').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
+		$('#s7 span').removeClass('anim');
+		$('#s8 span').removeClass('anim');
 	}
 	function resets9() {
-		$('.s9b,#s9 > i').removeClass('anim');
+		$('#s1 span,#s1 > i').removeClass('anim');
+		$('#s2 span').removeClass('anim');
+		$('#s3 span, #s3 i').removeClass('anim');
+		$('#s4 span').removeClass('anim');
+		$('#s5 span,#s5 i').removeClass('anim');
+		$('.s7a').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
+		$('#s7 span').removeClass('anim');
+		$('#s8 span').removeClass('anim');
+		$('#s9 span,#s9 i').removeClass('anim');
 	}
 	function resets10() {
-		$('.s10a,#s10 > i').removeClass('anim');
+		$('#s1 span,#s1 > i').removeClass('anim');
+		$('#s2 span').removeClass('anim');
+		$('#s3 span, #s3 i').removeClass('anim');
+		$('#s4 span').removeClass('anim');
+		$('#s5 span,#s5 i').removeClass('anim');
+		$('.s7a').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
+		$('#s7 span').removeClass('anim');
+		$('#s8 span').removeClass('anim');
+		$('#s9 span,#s9 i').removeClass('anim');
+		$('#s10 span, #s10 i').removeClass('anim');
 	}
 	function resetall() {
 		$('#s1,#s2,#s3,#s4,#s5,#s6,#s7,#s8,#s9,#s10').removeClass('active');
 		$('span,i,img').removeClass('anim');
-		$('#s0,#s1,#s2,#s3,#s4,#s5,#s6,#s7,#s8,#s9,#s10').removeClass('done');
+		$('.slide').removeClass('done');
 	}
 	
 	
@@ -374,6 +417,8 @@
 		fingers:actionfinger,
 		threshold: lengthofdrag 
 	});
+	
+	
 	$("#a2").swipe({
 		swipeRight:function(event, direction, distance, duration, fingerCount) {
 			$(this).removeClass('active');
