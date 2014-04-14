@@ -252,27 +252,93 @@
 	}
 	
 	function tos4() {
-		$('#s4').html('<span class="s4a"></span><span class="s4a2"></span><img src="css/images/s4b.png" alt="" class="s4b"/><span class="s4c"></span><span class="s4d"></span>');
+		$('#s4').html('<span class="s4a"></span><span class="s4a2"></span><img src="css/images/s4b.png" alt="" class="s4b"/><span class="s4c"></span><span class="s4d"></span><span id="s4zoom"></span><span id="s4zoombox"></span>');
 		setTimeout(function() {$('#s4 > .s4a').addClass('anim');},1000);
 		setTimeout(function() {$('#s4 > .s4a2').addClass('anim');},1500);
 		setTimeout(function() {$('#s4 > .s4b').addClass('anim');},2000);
 		setTimeout(function() {$('#s4 > .s4c').addClass('anim');},2500);
 		setTimeout(function() {$('#s4 > .s4d').addClass('anim');},3000);
+		
+		$("#s4zoom").swipe({
+			pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$('#s4zoombox').fadeIn();
+			}, pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$('#s4zoombox').fadeOut();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		
 	}
 	function tos5() {
-		$('#s5').html('<span class="s5a"></span><span class="s5b"></span><span class="s5c"></span><span class="s5d"></span><span class="s5e"></span><i></i>');
+		$('#s5').html('<span class="s5a"></span><span class="s5b"></span><span class="s5c"></span><span class="s5d"></span><span class="s5e"></span><i></i><span id="s5zoom"></span><span id="s5zoombox1"></span><span id="s5zoom2"></span><span id="s5zoombox2"></span><span id="s5zoom3"></span><span id="s5zoombox3"></span>');
 		setTimeout(function() {$('#s5 > .s5a').addClass('anim');},1000);
 		setTimeout(function() {$('#s5 > .s5b, #s5 > i').addClass('anim');},1500);
 		setTimeout(function() {$('#s5 > .s5c').addClass('anim');},2000);
 		setTimeout(function() {$('#s5 > .s5d').addClass('anim');},2500);
 		setTimeout(function() {$('#s5 > .s5e').addClass('anim');},3000);
+		
+		$("#s5zoom1").swipe({
+			pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$('#s5zoombox1').fadeIn();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		$("#s5zoom2").swipe({
+			pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$('#s5zoombox2').fadeIn();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		$("#s5zoom3").swipe({
+			pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$('#s5zoombox3').fadeIn();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		$("#s5zoombox1").swipe({
+			pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$(this).fadeOut();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		$("#s5zoombox2").swipe({
+			pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$(this).fadeOut();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		$("#s5zoombox3").swipe({
+			pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$(this).fadeOut();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		
 	}
 	function tos6() {
-		$('#s6').html('<span class="s6a"></span><span class="s6b"></span><span class="s6c"></span><span class="s6d"></span><span class="s6e"></span>');
+		$('#s6').html('<span class="s6a"></span><span class="s6b"></span><span class="s6c"></span><span class="s6d"></span><span class="s6e"></span><span id="s6zoom"></span><span id="s6zoombox"></span>');
 		setTimeout(function() {$('#s6 > .s6b').addClass('anim');},1000);
 		setTimeout(function() {$('#s6 > .s6c').addClass('anim');},1500);
 		setTimeout(function() {$('#s6 > .s6d').addClass('anim');},2000);
 		setTimeout(function() {$('#s6 > .s6e').addClass('anim');},2500);
+		
+		$("#s6zoom").swipe({
+			pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$('#s6zoombox').fadeIn();
+			}, pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$('#s6zoombox').fadeOut();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		
 	}
 	function tos7() {
 		$('#s7').html('<span class="s7a"></span><span class="s7b"></span><span class="s7c"></span><span class="s7d"></span>');
