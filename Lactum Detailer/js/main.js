@@ -1,11 +1,11 @@
-﻿$(document).ready(function() {
+$(document).ready(function() {
 	document.body.addEventListener('touchmove', function(e) {
 	  // This prevents native scrolling from happening.
 	  e.preventDefault();
 	}, false);
 	
 	var actionfinger = 1,
-		lengthofdrag = 200;
+		lengthofdrag = 300;
 	
 	$("#s0 > .lactumstart").live('click',function() {
 		$('#s0').addClass('done');
@@ -213,78 +213,34 @@
 	
 	/*RESET*/
 	function resets1() {
-		$('#s1 span,#s1 > i').removeClass('anim');
+		$('span,i,img').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
 	}
 	function resets2() {
-		$('#s1 span,#s1 > i').removeClass('anim');
-		$('#s2 span').removeClass('anim');
+		$('span,i,img').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
 	}
 	function resets3() {
-		$('#s1 span,#s1 > i').removeClass('anim');
-		$('#s2 span').removeClass('anim');
-		$('#s3 span, #s3 i').removeClass('anim');
+		$('span,i,img').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
 	}
 	function resets4() {
-		$('#s1 span,#s1 > i').removeClass('anim');
-		$('#s2 span').removeClass('anim');
-		$('#s3 span, #s3 i').removeClass('anim');
-		$('#s4 span').removeClass('anim');
+		$('span,i,img').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
 	}
 	function resets5() {
-		$('#s1 span,#s1 > i').removeClass('anim');
-		$('#s2 span').removeClass('anim');
-		$('#s3 span, #s3 i').removeClass('anim');
-		$('#s4 span').removeClass('anim');
-		$('#s5 span,#s5 i').removeClass('anim');
+		$('span,i,img').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
 	}
 	function resets6() {
-		$('#s1 span,#s1 > i').removeClass('anim');
-		$('#s2 span').removeClass('anim');
-		$('#s3 span, #s3 i').removeClass('anim');
-		$('#s4 span').removeClass('anim');
-		$('#s5 span,#s5 i').removeClass('anim');
+		$('span,i,img').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
 	}
 	function resets7() {
-		$('#s1 span,#s1 > i').removeClass('anim');
-		$('#s2 span').removeClass('anim');
-		$('#s3 span, #s3 i').removeClass('anim');
-		$('#s4 span').removeClass('anim');
-		$('#s5 span,#s5 i').removeClass('anim');
-		$('.s7a').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
-		$('#s7 span').removeClass('anim');
+		$('span,i').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
 	}
 	function resets8() {
-		$('#s1 span,#s1 > i').removeClass('anim');
-		$('#s2 span').removeClass('anim');
-		$('#s3 span, #s3 i').removeClass('anim');
-		$('#s4 span').removeClass('anim');
-		$('#s5 span,#s5 i').removeClass('anim');
-		$('.s7a').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
-		$('#s7 span').removeClass('anim');
-		$('#s8 span').removeClass('anim');
+		$('span,i,img').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
 	}
 	function resets9() {
-		$('#s1 span,#s1 > i').removeClass('anim');
-		$('#s2 span').removeClass('anim');
-		$('#s3 span, #s3 i').removeClass('anim');
-		$('#s4 span').removeClass('anim');
-		$('#s5 span,#s5 i').removeClass('anim');
-		$('.s7a').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
-		$('#s7 span').removeClass('anim');
-		$('#s8 span').removeClass('anim');
-		$('#s9 span,#s9 i').removeClass('anim');
+		$('span,i,img').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
 	}
 	function resets10() {
-		$('#s1 span,#s1 > i').removeClass('anim');
-		$('#s2 span').removeClass('anim');
-		$('#s3 span, #s3 i').removeClass('anim');
-		$('#s4 span').removeClass('anim');
-		$('#s5 span,#s5 i').removeClass('anim');
-		$('.s7a').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
-		$('#s7 span').removeClass('anim');
-		$('#s8 span').removeClass('anim');
-		$('#s9 span,#s9 i').removeClass('anim');
-		$('#s10 span, #s10 i').removeClass('anim');
+		$('span,i,img').removeClass('anim').removeClass('anim2').removeClass('anim3').removeClass('anim4').removeClass('anim5').removeClass('anim6');
 	}
 	function resetall() {
 		$('#s1,#s2,#s3,#s4,#s5,#s6,#s7,#s8,#s9,#s10').removeClass('active');
