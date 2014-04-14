@@ -59,6 +59,8 @@ a,img { border: 0;outline-width:0;}
 #s3 .s3d { display: block; position: absolute; height:65px; width:709px; left:78px;top: 673px;background: url('images/s3d.png') left top ;opacity: 0;-moz-transition:opacity 0.3s;-webkit-transition:opacity 0.3s;transition:opacity 0.3s }
 #s3 .s3d.anim { opacity: 1}
 
+#s3zoom { display: block; width: 878px;height: 504px;position: absolute;left: 55px;top:151px;z-index: 99 }
+#s3zoombox { display: none; width: 1006px;height: 578px;position: absolute;left: 9px;top:94px;z-index: 98 }
 
 /*SLIDE4*/
 

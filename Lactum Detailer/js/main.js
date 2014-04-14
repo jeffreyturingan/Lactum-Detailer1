@@ -1,4 +1,5 @@
 ﻿$(document).ready(function() {
+	"use strict";
 	document.body.addEventListener('touchmove', function(e) {
 	  // This prevents native scrolling from happening.
 	  e.preventDefault();
@@ -8,7 +9,7 @@
 	
 	
 	var actionfinger = 1,
-		lengthofdrag = 250;
+		lengthofdrag = 400;
 	
 	$("#s0 > .lactumstart").live('click',function() {
 		$('#s0').addClass('done');
@@ -232,11 +233,22 @@
 		setTimeout(function() {$('#s2 > .s2b,#s2 > .s2c').addClass('anim');}, 1000);
 	}
 	function tos3() {
-		$('#s3').html('<span class="s3a"></span><span class="s3b"></span><i></i><span class="s3c"></span><span class="s3d"></span>');
+		$('#s3').html('<span class="s3a"></span><span class="s3b"></span><i></i><span class="s3c"></span><span class="s3d"></span><span id="s3zoom"></span><span id="s3zoombox"></span>');
 		setTimeout(function() {$('#s3 > .s3a').addClass('anim');}, 1000);
 		setTimeout(function() {$('#s3 > .s3b, #s3 > i').addClass('anim');}, 1500);
 		setTimeout(function() {$('#s3 > .s3c').addClass('anim');}, 2000);
 		setTimeout(function() {$('#s3 > .s3d').addClass('anim');}, 2500);
+		
+		$("#s3zoom").swipe({
+			pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$('#s3zoombox').fadeIn();
+			}, pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$('#s3zoombox').fadeOut();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		
 	}
 	
 	function tos4() {
@@ -395,6 +407,10 @@
 		setTimeout(function() {$('#a2 > img').fadeIn(800);},300);
 		setTimeout(function() {$('#a2 > a').fadeIn(800);},1100);
 	}
+	
+	
+	
+	
 	
 	
 });
