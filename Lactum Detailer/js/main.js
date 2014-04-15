@@ -1,4 +1,4 @@
-﻿$(document).ready(function() {
+$(document).ready(function() {
 	"use strict";
 	document.body.addEventListener('touchmove', function(e) {
 	  // This prevents native scrolling from happening.
@@ -271,7 +271,7 @@
 		
 	}
 	function tos5() {
-		$('#s5').html('<span class="s5a"></span><span class="s5b"></span><span class="s5c"></span><span class="s5d"></span><span class="s5e"></span><i></i><span id="s5zoom"></span><span id="s5zoombox1"></span><span id="s5zoom2"></span><span id="s5zoombox2"></span><span id="s5zoom3"></span><span id="s5zoombox3"></span>');
+		$('#s5').html('<span class="s5a"></span><span class="s5b"></span><span class="s5c"></span><span class="s5d"></span><span class="s5e"></span><i></i><span id="s5zoom1"></span><span id="s5zoombox1"></span><span id="s5zoom2"></span><span id="s5zoombox2"></span><span id="s5zoom3"></span><span id="s5zoombox3"></span>');
 		setTimeout(function() {$('#s5 > .s5a').addClass('anim');},1000);
 		setTimeout(function() {$('#s5 > .s5b, #s5 > i').addClass('anim');},1500);
 		setTimeout(function() {$('#s5 > .s5c').addClass('anim');},2000);
@@ -332,8 +332,14 @@
 		$("#s6zoom").swipe({
 			pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom) {
 				$('#s6zoombox').fadeIn();
-			}, pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
-				$('#s6zoombox').fadeOut();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+        
+        $("#s6zoombox").swipe({
+			pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$(this).fadeOut();
 			},
 			 fingers:2,  
 	        pinchThreshold:0 
@@ -373,11 +379,54 @@
 		setTimeout(function() {$('#s8 > .s8e').addClass('anim');},3500);
 	}
 	function tos9() {
-		$('#s9').html('<span class="s9a"></span><span class="s9b"></span><i></i>');
+		$('#s9').html('<span class="s9a"></span><span class="s9b"></span><i></i><span id="s9zoom1"></span><span id="s9zoombox1"></span><span id="s9zoom2"></span><span id="s9zoombox2"></span><span id="s9zoom3"></span><span id="s9zoombox3"></span>');
 		setTimeout(function() {$('#s9 > .s9b, #s9 > i').addClass('anim');},1000);
+		$("#s9zoom1").swipe({
+			pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$('#s9zoombox1').fadeIn();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		$("#s9zoom2").swipe({
+			pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$('#s9zoombox2').fadeIn();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		$("#s9zoom3").swipe({
+			pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$('#s9zoombox3').fadeIn();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		$("#s9zoombox1").swipe({
+			pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$(this).fadeOut();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		$("#s9zoombox2").swipe({
+			pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$(this).fadeOut();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		$("#s9zoombox3").swipe({
+			pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom) {
+				$(this).fadeOut();
+			},
+			 fingers:2,  
+	        pinchThreshold:0 
+		});
+		
 	}
 	function tos10() {
-		$('#s10').html('<span class="s10a"></span><i></i>');
+		$('#s10').html('<span class="s10a"></span><i></i><a class="restart"></a>');
 		setTimeout(function() {$('#s10 > .s10a, #s10 > i ').addClass('anim');},1000);
 	}
 	

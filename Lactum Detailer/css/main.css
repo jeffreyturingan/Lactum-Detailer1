@@ -1,4 +1,4 @@
-﻿/*-----------------------------------------------------------------------------------------------
+/*-----------------------------------------------------------------------------------------------
 Project Name: | Lactum Creative
 Description:  | Ipad App
 Company:      | autologicmedia
@@ -104,13 +104,13 @@ a,img { border: 0;outline-width:0;}
 #s5 .s5e.anim { opacity: 1}
 
 #s5zoom1 { display: block; width: 357px;height: 504px;position: absolute;left: 41px;top:121px;z-index: 99 }
-#s5zoombox1 { display: none; width: 519px;height:727px;position: absolute;left: 256px;top:22px;background: url('images/s5zoom1.jpg') center center no-repeat;z-index: 98 }
+#s5zoombox1 { display: none; width: 519px;height:727px;position: absolute;left: 256px;top:22px;background: url('images/s5zoom1.jpg') center center no-repeat;z-index: 100 }
 
 #s5zoom2 { display: block; width: 261px;height: 504px;position: absolute;left: 438px;top:121px;z-index: 99 }
-#s5zoombox2 { display: none; width: 866px;height: 687px;position: absolute;left: 256px;top:22px;background: url('images/s5zoom2.jpg') center center no-repeat;z-index: 98 }
+#s5zoombox2 { display: none; width: 519px;height: 727px;position: absolute;left: 256px;top:22px;background: url('images/s5zoom2.jpg') center center no-repeat;z-index: 100 }
 
 #s5zoom3 { display: block; width: 273px;height: 504px;position: absolute;left: 731px;top:121px;z-index: 99 }
-#s5zoombox3 { display: none; width: 866px;height: 687px;position: absolute;left: 256px;top:22px;background: url('images/s5zoom3.jpg') center center no-repeat;z-index: 98 }
+#s5zoombox3 { display: none; width: 519px;height: 727px;position: absolute;left: 256px;top:22px;background: url('images/s5zoom3.jpg') center center no-repeat;z-index: 100 }
 
 
 /*SLIDE6*/
@@ -129,7 +129,7 @@ a,img { border: 0;outline-width:0;}
 #s6 .s6e.anim { opacity: 1}
 
 #s6zoom { display: block; width: 895px;height: 377px;position: absolute;left: 62px;top:148px;z-index: 99 }
-#s6zoombox { display: none; width: 866px;height: 687px;position: absolute;left: 82px;top:40px;background: url('images/s6zoom.png');z-index: 98 }
+#s6zoombox { display: none; width: 866px;height: 687px;position: absolute;left: 82px;top:40px;background: url('images/s6zoom.png');z-index: 100 }
 
 /*SLIDE7*/
 #s7 { background: url('images/s7.png') left top no-repeat}
@@ -176,6 +176,16 @@ a,img { border: 0;outline-width:0;}
 #s9 i { display: block; width: 141px;height: 768px; position: absolute;left: -141px;background: url('images/glow1.png') ; top:0px;-moz-transition:0.5s;-webkit-transition:0.5s;transition:0.5s}
 #s9 i.anim { left: 100%;}
 
+#s9zoom1 { display: block; width: 320px;height: 572px;position: absolute;left: 26px;top:96px;z-index: 99 }
+#s9zoombox1 { display: none; width: 902px;height:602px;position: absolute;left: 60px;top:81px;background: url('images/s9zoom1.png') center center no-repeat;z-index: 100 }
+
+#s9zoom2 { display: block; width: 320px;height: 572px;position: absolute;left: 351px;top:96px;z-index: 99 }
+#s9zoombox2 { display: none; width: 902px;height: 602px;position: absolute;left: 60px;top:81px;background: url('images/s9zoom2.png') center center no-repeat;z-index: 100 }
+
+#s9zoom3 { display: block; width: 320px;height: 572px;position: absolute;left: 675px;top:96px;z-index: 99 }
+#s9zoombox3 { display: none; width: 902px;height: 602px;position: absolute;left: 60px;top:81px;background: url('images/s9zoom3.png') center center no-repeat;z-index: 100 }
+
+
 
 /*SLIDE10*/
 #s10 .s10a {display: block; position: absolute; height:768px; width:0; left:0;top:0;background: url('images/s10a.jpg') left top ;-moz-transition:width 0.8s;-webkit-transition:width 0.8s;transition:width 0.8s }
@@ -184,7 +194,7 @@ a,img { border: 0;outline-width:0;}
 #s10 i { display: block; width: 141px;height: 768px; position: absolute;left: -141px;background: url('images/glow1.png') ; top:0px;-moz-transition:0.7s;-webkit-transition:0.7s;transition:0.7s}
 #s10 i.anim { left: 100%;}
 
-.restart { display: block;width: 50px;height: 50px; background: url('images/home.png') ;position: absolute;bottom: 20px;left: 20px }
+.restart { display: block;width: 50px;height: 50px; background: url('images/home.png') ;position: absolute;bottom: 20px;left: 20px;z-index:99 }
 
 
 
