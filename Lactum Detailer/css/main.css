@@ -168,9 +168,9 @@ a,img { border: 0;outline-width:0;}
 #s8 .s8e.anim { width:660px}
 
 /*SLIDE9*/
-#s9 .s9a {display: block; position: absolute; height:288px; width:759px; left:110px;top: 39px;background: url('images/s9a.png') left top no-repeat;}
+#s9 .s9a {display: block; position: absolute; height:348px; width:1024px; left:0;top: 0;background: url('images/s9a.png') left top no-repeat;}
 
-#s9 .s9b {display: block; position: absolute; height:317px; width:0; left:0px;top:352px;background: url('images/s9b.png');-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s }
+#s9 .s9b {display: block; position: absolute; height:319px; width:0; left:0px;top:352px;background: url('images/s9b.png');-moz-transition:width 0.5s;-webkit-transition:width 0.5s;transition:width 0.5s}
 #s9 .s9b.anim { width:1024px}
 
 #s9 i { display: block; width: 141px;height: 768px; position: absolute;left: -141px;background: url('images/glow1.png') ; top:0px;-moz-transition:0.5s;-webkit-transition:0.5s;transition:0.5s}
@@ -238,7 +238,6 @@ a,img { border: 0;outline-width:0;}
 .ina1 { display: block;position: absolute;width: 231px;height: 275px;overflow: hidden;left: 48px;top:109px ;z-index: 999;background: #000;opacity: 0; cursor: pointer;}
 .ina2 { display: block;position: absolute;width: 221px;height: 276px;overflow: hidden;left: 744px;top:109px ;z-index: 999;background: #000;opacity: 0; cursor: pointer;}
 .ina3 { display: block;position: absolute;;width: 228px;height: 275px;overflow: hidden;left:398px;top:448px ;z-index: 999;background: #000;opacity: 0; cursor: pointer;}
-
 
 
 
